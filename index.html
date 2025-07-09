@@ -175,7 +175,22 @@
   <footer class="container">
     <p>&copy; 2025 James Kasky. All rights reserved.</p>
   </footer>
+  
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
 
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
   <script src="js/script.js"></script>
 </body>
 </html>
