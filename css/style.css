@@ -1,3 +1,20 @@
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-info p {
+  margin-bottom: 10px;
+}
+.contact-info a {
+  color: gold;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+
 .testimonials-grid {
   display: grid;
   gap: 20px;
