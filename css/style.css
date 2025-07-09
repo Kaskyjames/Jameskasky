@@ -199,7 +199,7 @@ header .logo img {
 
 /* Hero Section */
 .hero {
-  background: #000;
+  background: #222;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -215,7 +215,7 @@ header .logo img {
 }
 .cta-button {
   display: inline-block;
-  background: gold;
+  background: #d4af37;
   color: #000;
   padding: 12px 24px;
   text-decoration: none;
@@ -223,7 +223,7 @@ header .logo img {
   border-radius: 5px;
 }
 .cta-button:hover {
-  background: #e6c200;
+  background: #f0c93a;
 }
 
 /* Sections */
@@ -294,4 +294,41 @@ form button:hover {
 .testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-grid {
+    flex-direction: column;
+  }
+}
+
+
+
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
