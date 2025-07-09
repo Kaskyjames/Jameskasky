@@ -1,3 +1,31 @@
+.testimonials-grid {
+  display: grid;
+  gap: 20px;
+}
+.testimonial-card {
+  background: #fff;
+  border-left: 5px solid gold;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.testimonial-card h4 {
+  font-weight: normal;
+  color: #333;
+  font-size: 0.95em;
+}
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
 .portfolio-grid {
   display: grid;
   gap: 20px;
