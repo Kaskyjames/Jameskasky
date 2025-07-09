@@ -1,3 +1,30 @@
+.services-grid {
+  display: grid;
+  gap: 30px;
+}
+.service-card {
+  background: #fff;
+  border-left: 5px solid gold;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.service-card p {
+  color: #555;
+}
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
 .about-grid {
   display: flex;
   flex-direction: column;
