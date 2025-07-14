@@ -196,39 +196,6 @@
 </script>
 
 
-  <script>
-  document.getElementById("contactForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    const responseDiv = document.getElementById("formResponse");
-
-    try {
-      const res = await fetch("http://localhost:5000/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ name, email, message })
-      });
-
-      const data = await res.json();
-
-      if (data.success) {
-        responseDiv.innerHTML = "<p style='color:green;'>Message sent successfully!</p>";
-        document.getElementById("contactForm").reset();
-      } else {
-        responseDiv.innerHTML = `<p style='color:red;'>${data.error || "Error sending message."}</p>`;
-      }
-    } catch (err) {
-      console.error(err);
-      responseDiv.innerHTML = "<p style='color:red;'>Could not send message. Server error.</p>";
-    }
-  });
-  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
