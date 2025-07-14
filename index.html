@@ -153,26 +153,26 @@
   </div>
   </section>
 
-  <!--- Contact Section --->
-  <section id="contact" class="container contact-section">
+  <!-- Contact Section -->
+<section id="contact" class="container contact-section">
   <h2>Contact Me</h2>
   <p>You can reach me anytime for inquiries, quotes, or collaborations:</p>
   
   <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:kaskyjames@gmail.com">enquiry@jameskasky.com</a></p>
+    <p><strong>Email:</strong> <a href="mailto:enquiry@jameskasky.com">enquiry@jameskasky.com</a></p>
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/40733760917" target="_blank">+40 733 760 917</a></p>
   </div>
 
-  <form id="contactForm">
-  <input type="text" id="name" placeholder="Your Name" required />
-  <input type="email" id="email" placeholder="Your Email" required />
-    <input type="text" id="phone" placeholder="Your Mobile Phone Number" required />
-  <textarea id="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+  <form id="contactForm" method="POST">
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+    <input type="email" name="email" id="email" placeholder="Your Email" required>
+    <input type="text" name="phone" id="phone" placeholder="Your Mobile Phone Number" required>
+    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
-<div id="formResponse"></div>
-  </section>
+  <div id="formResponse"></div>
+</section>
 
   <!-- Footer -->
   <footer class="container">
